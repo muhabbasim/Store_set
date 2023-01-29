@@ -1,0 +1,21 @@
+.change-role {
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  gap: 5px;
+  box-shadow: var(--box-shadow);
+  .selection-bar {
+
+    select {
+      border: none;
+      padding: 5px 10px;
+      outline: none;
+
+    }
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+  }
+}

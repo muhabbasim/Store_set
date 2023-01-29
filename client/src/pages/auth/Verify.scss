@@ -1,0 +1,18 @@
+.verify {
+  min-height: calc(100vh - 135px);
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h2 {
+      font-size: 40px;
+    }
+
+    button {
+      background-color: var(--light-blue);
+    }
+  }
+}

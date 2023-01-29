@@ -1,0 +1,48 @@
+.percentage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+
+  .per-num {
+    width: 18px;
+  }
+  .stats {
+    display: flex;
+    gap: 20px;
+
+    .progress {
+      display: flex;
+      width: 130px;
+      height: 10px;
+      background-color: rgba(128, 128, 128, 0.258);
+      border-radius: 5px;
+      overflow: hidden;
+      transform: rotate(360deg) scaleX(-1);
+      box-shadow: var(--box-shadow);
+
+      
+      .progress-fill {
+        opacity: 0;
+        width: 0%;
+        height: 10px;
+        background-image: repeating-linear-gradient(
+          to left, 
+          rgb(31, 222, 243),
+          rgb(32, 184, 201),
+          rgb(23, 155, 137) 
+        );
+        box-shadow: var(--box-shadow);
+        // background-image: rgb(15, 115, 126);
+        border-radius: 5px;
+        transition: 2s ease;
+      }
+
+    }
+  }
+
+  // span {
+  //   width: 90px;
+  //   text-align: right;
+  // }
+}

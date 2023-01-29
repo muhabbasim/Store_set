@@ -1,0 +1,54 @@
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: var(--blue);
+  padding: 0 30px;
+  box-shadow: var(--box-shadow);
+  position: fixed;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    li{
+      list-style: none;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid rgba(255, 255, 255, 0.401);
+        cursor: pointer;
+      }
+      span {
+        margin-right: 10px;
+      }
+    }
+  }
+  .login {
+    background-color: var(--light-blue);
+
+  }
+  .register {
+    background-color: var(--fail);
+
+  }
+  .icon {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      cursor: pointer;
+    }
+  }
+}

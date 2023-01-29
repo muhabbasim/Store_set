@@ -1,0 +1,66 @@
+.side-bar {
+  height: calc(100vh - 60px);
+  box-shadow: var(--box-shadow);
+  background-image: repeating-linear-gradient(
+    to bottom, 
+    rgb(238, 190, 118),
+    rgba(63, 205, 241, 0.64),
+  );
+
+  color: white;
+  position: fixed;
+  top: 60px;
+  width: 20%;
+  
+  .option {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    // border-top: 2px solid rgb(166, 166, 166);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.318);
+    cursor: pointer;
+    position: relative;
+  }
+
+  .option-drop {
+    padding: 10px 20px;
+    align-items: center;
+    gap: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.318);
+    cursor: pointer;
+    position: relative;
+
+    .drop-down {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-top: 10px;
+
+      .dropdown-menu {
+        border: 1px solid rgba(255, 255, 255, 0.318);
+        padding: 10px 10px;
+      }
+    }
+
+    .drop-down-off {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      margin-top: 10px;
+      display: none;
+
+
+      .dropdown-menu {
+        border: 1px solid rgb(203, 203, 203);
+        padding: 10px 10px;
+      }
+    }
+  }
+
+  .-link {
+    text-decoration: none;
+    color: inherit
+  } 
+
+}

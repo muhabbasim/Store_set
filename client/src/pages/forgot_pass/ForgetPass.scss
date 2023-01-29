@@ -1,0 +1,68 @@
+.forgot-auth {
+  background-color: rgb(238, 238, 238);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3ccircle r='93.335' cx='-41.27' cy='13.83' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='93.335' cx='310.46' cy='445.69' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='93.335' cx='757.04' cy='720.5' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='90.27' cx='272.06' cy='159.69' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='53.83' cx='732.83' cy='78.79' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='50.615' cx='962.47' cy='417.81' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='172.87' cx='1154.29' cy='271.74' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='70.955' cx='871.75' cy='162.57' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='182.345' cx='962.64' cy='487.14' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='129.03' cx='1329.24' cy='124.92' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='154.235' cx='30.25' cy='550.24' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='84.72' cx='344.03' cy='351.35' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='142.97' cx='758.01' cy='337.13' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='178.19' cx='0.35' cy='330.38' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='85.75' cx='720.99' cy='115.05' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='87.76' cx='813.73' cy='428.22' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='100.795' cx='891.66' cy='380.06' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='153.6' cx='374.13' cy='434.21' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='144.135' cx='205.2' cy='480.67' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='154.14' cx='302.47' cy='178.89' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='60.08' cx='630.76' cy='239.36' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='72.92' cx='829.23' cy='300.58' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='172.17' cx='1169.8' cy='134.09' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='174.99' cx='194.87' cy='12.28' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3ccircle r='87.72' cx='496' cy='553.17' stroke='%23365aa3' stroke-opacity='0.25' stroke-width='2'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1000'%3e%3crect width='1440' height='560' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+
+  width: 100%;
+  height: 100vh;
+
+  .login-page {
+    width: 320px;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    h1 {
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 30px;
+      color: var(--fail);
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      // align-items: center;
+      gap: 10px;
+  
+      input {
+        padding-left: 10px;
+        width: 280px;
+        height: 40px;
+        outline: none;
+        background-color: rgb(213, 239, 248);
+        border: none;
+        box-shadow: var(--box-shadow);
+      }
+      
+      .msg {
+
+        text-align: center;
+        
+        span {
+          color: var(--fail);
+        }
+      }
+
+      span {
+        color: gray;
+        text-align: center;
+      }
+
+      small {
+        font-size: 15px;
+        text-align: start;
+      }
+
+      .login-btn {
+        margin-top: 10px;
+        width: 100%;
+        background-color: var(--light-blue);
+      }
+    }
+  }
+}

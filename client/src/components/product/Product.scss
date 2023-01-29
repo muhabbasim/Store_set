@@ -1,0 +1,16 @@
+.item-row {
+ 
+  tr {
+    box-shadow: var(--box-shadow);
+    
+    .name-row {
+      display: flex;
+    }
+
+  }
+
+  td {
+    padding: 6px 0;
+  }
+
+}

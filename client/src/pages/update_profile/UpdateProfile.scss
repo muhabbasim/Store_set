@@ -1,0 +1,116 @@
+.update-profile-page {
+  display: flex;
+  padding-top: 60px;
+
+  .side-bar {
+    flex: 2;
+  }
+
+  .profile {
+    flex: 7;
+    min-height: calc(100vh - 135px);
+    padding-left: 20%;
+    background-image: url(../../images/bg.png);
+
+  
+    .header {
+      width: 100%;
+    }
+    
+    .profile-card {
+      box-shadow: var(--box-shadow);
+      min-width: 400px;
+      padding: 7px;
+      background-color: rgb(240, 240, 240);
+      
+      display: flex;
+      gap: 30px;
+
+      .user {
+        
+        .user-img {
+          background-color: var(--light-blue);
+          padding-top: 5px;
+          padding-bottom: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 10px;
+    
+          img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            object-fit: cover;
+          }
+    
+          h4 {
+            color: white;
+          }
+        }
+
+        .image-upload {
+
+          .file-upload {
+            margin-top: 10px;
+            border: 1px solid gray;
+            padding: 5px;
+            border-radius: 3px;
+          }
+        }
+
+        .change-pass{
+          margin-top: 20px;
+    
+        }
+      }
+  
+  
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 500px;
+
+        .item {
+          margin-top: 15px;
+          display: flex;
+          flex-direction: column;
+  
+          label {
+            margin-bottom: 6px;
+          }
+          
+          input {
+            padding: 10px 50px;
+            padding-left: 10px;
+            outline: none;
+            border: none;
+            border-radius: 3px;
+            box-shadow: var(--box-shadow);
+          }
+  
+          textarea {
+            padding: 10px 0;
+            padding-left: 10px;
+            outline: none;
+            border: none;
+            border-radius: 3px;
+            box-shadow: var(--box-shadow);
+          }
+        }
+
+        .update-btn {
+          background-color: var(--light-blue);
+          width: 100%;
+          height: 40px;
+          margin-top: 10px;
+        }
+      }
+  
+  
+    }
+  }
+}
